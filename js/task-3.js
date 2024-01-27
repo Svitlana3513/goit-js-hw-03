@@ -1,10 +1,11 @@
 function filterArray(numbers, value) {
     const checkedNumbersArray = [];
-    for (i = 0; i <= numbers.length; i += 1){
-        let value = numbers[0];
+    for (let i = 0; i < numbers.length; i+=1){
+        let value = numbers[i];
         if (numbers[i] > value) {
-            value = numbers[i];
-            checkedNumbersArray.push(value);     }
+           
+        checkedNumbersArray.push(i);
+        }
     }
     return checkedNumbersArray;   
 
